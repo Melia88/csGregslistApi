@@ -21,7 +21,7 @@ namespace csGregslistApi.Controllers
     {
       try
       {
-        return Ok(FakeDB.Houses);
+        return Ok(_service.GetAll());
       }
       catch (Exception e)
       {

@@ -22,7 +22,7 @@ namespace csGregslistApi.Controllers
     {
       try
       {
-        return Ok(FakeDB.Cars);
+        return Ok(_service.GetAll());
       }
       catch (Exception e)
       {
