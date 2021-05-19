@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace csGregslistApi.Controllers
 {
   [ApiController]
-  [Route("api.[controller]")]
+  [Route("api/[controller]")]
   public class HousesController : ControllerBase
   {
     private readonly HousesService _service;
