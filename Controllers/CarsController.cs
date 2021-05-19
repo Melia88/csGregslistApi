@@ -22,7 +22,9 @@ namespace csGregslistApi.Controllers
     {
       try
       {
-        return Ok(_service.GetAll());
+        IEnumerable<Car> cars = _service.GetAll();
+        return Ok(cars);
+        // return Ok(_service.GetAll());
       }
       catch (Exception e)
       {

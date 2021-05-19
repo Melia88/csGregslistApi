@@ -21,7 +21,9 @@ namespace csGregslistApi.Controllers
     {
       try
       {
-        return Ok(_service.GetAll());
+        IEnumerable<House> houses = _service.GetAll();
+        return Ok(houses);
+        // return Ok(_service.GetAll());
       }
       catch (Exception e)
       {
